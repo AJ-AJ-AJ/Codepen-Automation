@@ -20,6 +20,7 @@ public class SignUpTest {
 		String url= "https://codepen.io/CalendlyQA/full/KKPQLmV";
 		driver.get(url);
 		
+		//waiting for elements to load
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/header/div/a[1]")));
 		
