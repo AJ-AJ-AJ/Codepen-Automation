@@ -19,7 +19,7 @@ public class ChangeViewTest {
 		String url= "https://codepen.io/CalendlyQA/full/KKPQLmV";
 		driver.get(url);
 				
-		
+		//click on menu
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("view-switcher-button")));
 		WebElement menu = driver.findElement(By.id("view-switcher-button"));
